@@ -1,0 +1,117 @@
+html {
+    min-height: 100%;
+}
+body {
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+
+}
+.panel {
+    background: url(/images/bg-pattern-desktop.svg) -580px -300px no-repeat,url(/images/illustration-woman-online-desktop.svg) -80px no-repeat #fff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    max-width: 900px;
+    height: 490px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+}
+.faq {
+    margin: 0;
+    padding: 2rem 5rem;
+    width: 40%;
+    float: right;
+}
+h1 {
+    font-weight: 700;
+    margin: 2rem 0;
+}
+.box {
+    margin-left: -7rem;
+    position: absolute;
+    animation: loopbox 2s ease infinite;
+}
+.woman {
+    display: none;
+}
+@keyframes loopbox {
+    0% {
+        top: 340px;
+    }
+    50% {
+        top: 350px;
+    }
+    100% {
+        top: 340px;
+    }
+}
+hr {
+    border-top: 0px solid rgba(0, 0, 0, 0.116);
+}
+.question {
+    border: none;
+    padding: .5rem 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    background: transparent;
+    color: hsl(238, 29%, 16%);
+}
+.question:after {
+    content: url("/images/icon-arrow-down.svg");
+    float: right;
+    transition: .3s;
+}
+.question:hover {
+    color: hsl(14, 88%, 65%);
+}
+.question.active {
+    font-weight: 700;
+}
+.question.active::after {
+    transform: rotate(180deg);
+}
+.answer {
+    color: hsla(238, 29%, 16%, 0);
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+.answer.show {
+    height: auto;
+    color: hsla(238, 29%, 16%, 0.7);
+}
+.attribution {
+    margin-top: 1rem;
+}
+
+@media (max-width: 840px) {
+    .panel {
+        background: url(/images/bg-pattern-mobile.svg) center top no-repeat #fff;
+        width: 375px;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        width: 20%;
+        margin-top: 8rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .faq {
+        margin: 0;
+        top: 50%;
+        padding: 1rem 2rem;
+        width: 85%;
+        float: none;
+    }
+    .woman {
+        display: block;
+        transform: translate(40px, -110px);
+        position: absolute;
+    }
+    .box {
+        display: none;
+    }
+}
