@@ -8,7 +8,7 @@ body {
 
 }
 .panel {
-    background: url(/images/bg-pattern-desktop.svg) -580px -300px no-repeat,url(/images/illustration-woman-online-desktop.svg) -80px no-repeat #fff;
+    background: url(images/bg-pattern-desktop.svg) -580px -300px no-repeat,url(images/illustration-woman-online-desktop.svg) -80px no-repeat #fff;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
     max-width: 900px;
@@ -59,7 +59,7 @@ hr {
     color: hsl(238, 29%, 16%);
 }
 .question:after {
-    content: url("/images/icon-arrow-down.svg");
+    content: url("images/icon-arrow-down.svg");
     float: right;
     transition: .3s;
 }
@@ -88,7 +88,7 @@ hr {
 
 @media (max-width: 840px) {
     .panel {
-        background: url(/images/bg-pattern-mobile.svg) center top no-repeat #fff;
+        background: url(images/bg-pattern-mobile.svg) center top no-repeat #fff;
         width: 375px;
     }
     h1 {
